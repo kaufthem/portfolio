@@ -1,0 +1,94 @@
+#projects {
+  padding-bottom: 4rem;
+}
+
+#contact {
+  padding-bottom: 4rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  height: 6rem;
+}
+
+.iframe-wrap {
+  width: 240px;
+  height: 160px;
+  margin: 1rem auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.iframe-overlay {
+  position: absolute;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(122,122,122,0.2);
+  transition: .3s ease-out;
+}
+
+.iframe-overlay:hover {
+  background-color: rgba(0,0,0,0.0);
+}
+
+iframe {
+  width: 400% !important;
+  height: 400% !important;
+  -webkit-transform: scale(0.25);
+  transform: scale(0.25);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  border: none;
+}
+
+iframe::-webkit-scrollbar {  
+  display: none;
+}
+
+svg {
+  transition: .3s ease-out;
+}
+
+svg:hover {
+  transform: scale(1.3);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-card {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  width: 66%;
+  height: 95%;
+}
+
+.modal-xbutton {
+  color: #000;
+  float: right;
+  font-size: 28px;
+}
+
+.modal-xbutton:hover {
+  cursor: pointer;
+}
